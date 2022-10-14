@@ -7,7 +7,7 @@ RUN echo "ctf:ctf" | chpasswd
 
 WORKDIR /home/ctf
 
-COPY babypwn1 .
+COPY babypwn2 .
 COPY flag .
 COPY ynetd .
 
@@ -17,4 +17,4 @@ RUN chmod 600 flag
 
 USER ctf
 EXPOSE 1024
-CMD ./ynetd -p 1024 ./babypwn1
+CMD ./ynetd -p 1024 ./babypwn2
